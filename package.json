@@ -1,0 +1,33 @@
+{
+  "name": "velo-portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node scripts/build.mjs\" \"npx tailwindcss -i ./src/index.css -o ./dist/index.css --watch\"",
+    "build": "node scripts/build.mjs && npx tailwindcss -i ./src/index.css -o ./dist/index.css --minify",
+    "lint": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "esbuild": "^0.28.1",
+    "lucide-react": "^0.469.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^10.0.4",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.4.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "esbuild@0.25.12": true
+  }
+}

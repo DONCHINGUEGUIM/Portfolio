@@ -34,5 +34,5 @@ createServer((req, res) => {
     res.end('Not found');
   }
 }).listen(PORT, () => {
-  console.log(`VELO Portfolio → http://localhost:${PORT}`);
+  console.log(`DN Portfolio → http://localhost:${PORT}`);
 });

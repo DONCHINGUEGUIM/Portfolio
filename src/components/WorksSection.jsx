@@ -9,7 +9,7 @@ const projects = [
     tags: ['Flutter', 'Firebase', 'GetX'],
     description:
       'Full-stack e-commerce marketplace for Cameroon. Customer/seller app with product listings, cart, checkout, order tracking, and mobile money payments via NotchPay.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80',
+    image: '/images/kost-marketplace.svg',
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -20,7 +20,7 @@ const projects = [
     tags: ['Next.js', 'Socket.io', 'TypeScript'],
     description:
       'Real-time chat application built with Next.js 15, React 19, Express, and Socket.io. Features auth, channels, typing indicators, and image uploads.',
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&q=80',
+    image: '/images/alter-chat.svg',
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -31,7 +31,7 @@ const projects = [
     tags: ['Python', 'LangChain', 'Docker'],
     description:
       'Conversational RAG app with FastAPI, LangChain, Groq LLM, and Qdrant vector DB. Upload PDFs, ask questions, get context-aware answers — fully Dockerized.',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80',
+    image: '/images/conversational-rag.svg',
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -42,7 +42,7 @@ const projects = [
     tags: ['Python', 'Flask', 'Fintech'],
     description:
       'Payment gateway tester and integration tool for NotchPay mobile money APIs. Auth verification, payment initialization, checkout, and status tracking.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80',
+    image: '/images/notchpay-gateway.svg',
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -53,7 +53,7 @@ const projects = [
     tags: ['Flutter Web', 'Firebase', 'DataTable2'],
     description:
       'Responsive admin dashboard for managing KOST marketplace — CRUD operations for products, orders, brands, categories, and banners with Firebase backend.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+    image: '/images/kost-admin.svg',
     liveUrl: '#',
     githubUrl: '#',
   },
@@ -64,7 +64,7 @@ const projects = [
     tags: ['Flutter', 'OCR', 'Mobile'],
     description:
       'Fully offline OCR app that recognises text from images and documents on-device. Built with Flutter, no internet required for text extraction.',
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80',
+    image: '/images/capture-ocr.svg',
     liveUrl: '#',
     githubUrl: '#',
   },

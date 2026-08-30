@@ -56,7 +56,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
             01
           </span>
           <span className="group-hover:text-[#e05236] transition-colors duration-200">
-            VELO
+            DN
           </span>
         </a>
 

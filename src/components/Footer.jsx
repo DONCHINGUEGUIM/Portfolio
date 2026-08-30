@@ -51,7 +51,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-xs text-neutral-600 text-center md:text-right">
-            <p>&copy; {new Date().getFullYear()} VELO. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} DN. All rights reserved.</p>
             <p className="mt-0.5">
               Designed & Built with{' '}
               <span className="text-[#e05236]">React</span> &{' '}

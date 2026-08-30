@@ -21,13 +21,13 @@ const services = [
     stack: 'React, Next.js, Tailwind CSS, Node.js, Express, Socket.io',
   },
   {
-    title: 'Digital Design',
+    title: 'Project Design',
     badge: 'Good',
     badgeColor: 'text-amber-400 bg-amber-400/10 border-amber-400/20',
     experience: '1 year experience',
     description:
-      'Creating digital graphics, illustrations, and visual content for web, social media, and branding projects.',
-    stack: 'Adobe Creative Suite, Blender, Figma, After Effects',
+      'Designing system architecture, workflows, and data flow diagrams using PlantUML, Mermaid, and Draw.io for clear project planning.',
+    stack: 'PlantUML, Mermaid, Draw.io, Architecture Diagrams',
   },
   {
     title: 'Photo & Video Editing',

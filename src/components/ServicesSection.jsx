@@ -6,9 +6,9 @@ const services = [
     title: 'UI/UX Design',
     badge: 'Very Good',
     badgeColor: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20',
-    experience: '2 years experience',
+    experience: '1 year experience',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Phasellus interdum justo nec libero venenatis tincidunt.',
+      'Designing intuitive interfaces and seamless user experiences. Wireframes, prototypes, and design systems that prioritize usability.',
     stack: 'Figma, Adobe XD, Adobe Photoshop, Adobe Illustrator',
   },
   {
@@ -24,18 +24,18 @@ const services = [
     title: 'Digital Design',
     badge: 'Good',
     badgeColor: 'text-amber-400 bg-amber-400/10 border-amber-400/20',
-    experience: '2 years experience',
+    experience: '1 year experience',
     description:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+      'Creating digital graphics, illustrations, and visual content for web, social media, and branding projects.',
     stack: 'Adobe Creative Suite, Blender, Figma, After Effects',
   },
   {
     title: 'Photo & Video Editing',
     badge: 'Very Good',
     badgeColor: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20',
-    experience: '4 years experience',
+    experience: '1 year experience',
     description:
-      'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      'Photo retouching, color grading, and video editing for content creation. From raw footage to polished final cuts.',
     stack: 'Premiere Pro, DaVinci Resolve, Lightroom, Photoshop',
   },
 ];

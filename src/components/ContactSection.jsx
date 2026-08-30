@@ -36,7 +36,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="text-sm font-semibold text-white">Email</h4>
                   <p className="text-xs text-neutral-400 mt-0.5">
-                    hello@johndoe.dev
+                    donchingueguim@gmail.com
                   </p>
                 </div>
               </div>
@@ -48,7 +48,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="text-sm font-semibold text-white">Location</h4>
                   <p className="text-xs text-neutral-400 mt-0.5">
-                    San Francisco, CA
+                    Cameroon / Remote
                   </p>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function ContactSection() {
                   <input
                     id="name"
                     type="text"
-                    placeholder="John Doe"
+                    placeholder="Your Name"
                     className="w-full bg-neutral-900/80 border border-neutral-800 rounded-lg px-4 py-2.5 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-[#e05236]/60 focus:ring-1 focus:ring-[#e05236]/30 transition-all duration-200"
                   />
                 </div>

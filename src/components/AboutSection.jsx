@@ -22,7 +22,7 @@ export default function AboutSection({ setActiveSection }) {
             />
             {/* Decorative tag */}
             <div className="absolute bottom-4 left-4 bg-neutral-900/90 backdrop-blur-md border border-neutral-800/80 rounded-xl px-4 py-2 text-xs text-neutral-400">
-              <span className="text-white font-semibold">5+</span> years coding
+              <span className="text-white font-semibold">2+</span> years coding
             </div>
           </div>
         </div>
@@ -42,31 +42,31 @@ export default function AboutSection({ setActiveSection }) {
 
           <div className="space-y-4 text-neutral-400 text-sm leading-relaxed max-w-xl">
             <p>
-              I'm a passionate Front End Developer with a keen eye for design
-              and a love for crafting seamless user experiences. With years of
-              experience in the industry, I've honed my skills in modern
-              JavaScript frameworks, responsive design, and accessibility.
+              I'm a Software Engineer with a passion for building complete digital
+              products — from mobile apps to real-time backends. With 2+ years of
+              hands-on experience, I've shipped Flutter e-commerce apps, Node.js
+              serverless APIs on Cloudflare Workers, and Next.js web platforms.
             </p>
             <p>
-              When I'm not pushing pixels or debugging code, you'll find me
-              exploring nature — hiking through mountains, seeking inspiration
-              from the world around me. I believe the best digital products come
-              from a blend of technical precision and creative curiosity.
+              I focus on the full stack: databases (SQLite, Firestore, Cloudflare D1),
+              payment gateways (NotchPay, mobile money), real-time systems (Socket.io,
+              Firebase), and CI/CD deployment. When I'm not coding, you'll find me
+              exploring tools and tutorials to sharpen my craft.
             </p>
           </div>
 
           {/* Stats row */}
           <div className="flex flex-wrap gap-8 pt-4">
             <div>
-              <span className="text-2xl font-black text-white">50+</span>
+              <span className="text-2xl font-black text-white">10+</span>
               <p className="text-xs text-neutral-500 mt-1">Projects Done</p>
             </div>
             <div>
-              <span className="text-2xl font-black text-white">30+</span>
+              <span className="text-2xl font-black text-white">6+</span>
               <p className="text-xs text-neutral-500 mt-1">Happy Clients</p>
             </div>
             <div>
-              <span className="text-2xl font-black text-white">5+</span>
+              <span className="text-2xl font-black text-white">2+</span>
               <p className="text-xs text-neutral-500 mt-1">Years Exp.</p>
             </div>
           </div>

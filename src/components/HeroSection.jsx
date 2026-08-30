@@ -42,24 +42,24 @@ export default function HeroSection({ setActiveSection }) {
 
           {/* Main Title */}
           <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight leading-none text-white mb-5">
-            John
+            Donchi
             <br />
-            <span className="text-[#e05236]">Doe</span>
+            <span className="text-[#e05236]">Ngueguim</span>
           </h1>
 
           {/* Role */}
           <div className="flex items-center gap-3 mb-8">
             <div className="bg-neutral-900 border border-neutral-800 text-neutral-300 text-xs sm:text-sm px-4 py-2 rounded-full font-medium backdrop-blur-sm">
-              Front End Developer
+              Software Engineer
             </div>
             <div className="h-[1px] flex-1 bg-gradient-to-r from-neutral-800 to-transparent hidden sm:block" />
           </div>
 
           {/* Description */}
           <p className="text-neutral-400 text-sm sm:text-base max-w-md mb-10 leading-relaxed">
-            Crafting digital experiences with clean code and modern design.
-            Specializing in React, Tailwind CSS, and building accessible,
-            high-performance web applications.
+            Building full-stack systems with Flutter, React, and Cloudflare Workers.
+            Specializing in mobile apps, real-time backends, payment integrations,
+            and turning complex ideas into clean, working products.
           </p>
 
           {/* CTA Buttons */}

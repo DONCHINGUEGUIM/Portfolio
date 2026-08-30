@@ -15,10 +15,10 @@ const services = [
     title: 'Web Development',
     badge: 'Excellent',
     badgeColor: 'text-[#e05236] bg-[#e05236]/10 border-[#e05236]/20',
-    experience: '3 years experience',
+    experience: '2+ years experience',
     description:
-      'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
-    stack: 'React, Next.js, Tailwind CSS, Node.js, Express',
+      'Full-stack web development with React, Next.js, and Tailwind CSS. Building real-time chat apps, admin dashboards, and REST APIs with Node.js and Express.',
+    stack: 'React, Next.js, Tailwind CSS, Node.js, Express, Socket.io',
   },
   {
     title: 'Digital Design',
@@ -101,11 +101,11 @@ export default function ServicesSection({ setActiveSection }) {
           <div className="flex flex-col gap-2 pt-2">
             <div className="flex items-center gap-2 text-xs text-neutral-500">
               <span className="w-1.5 h-1.5 rounded-full bg-[#e05236]" />
-              20+ projects delivered
+              10+ projects delivered
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-500">
               <span className="w-1.5 h-1.5 rounded-full bg-[#e05236]" />
-              15+ satisfied clients
+              6+ satisfied clients
             </div>
             <div className="flex items-center gap-2 text-xs text-neutral-500">
               <span className="w-1.5 h-1.5 rounded-full bg-[#e05236]" />

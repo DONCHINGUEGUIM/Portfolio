@@ -10,7 +10,7 @@ const projects = [
     description:
       'Full-stack e-commerce marketplace for Cameroon. Customer/seller app with product listings, cart, checkout, order tracking, and mobile money payments via NotchPay.',
     image: '/images/kost-marketplace.svg',
-    liveUrl: '#',
+    liveUrl: 'https://www.kost7.store/',
     githubUrl: 'https://github.com/DONCHINGUEGUIM/flutter_E-commerceApp',
   },
   {
@@ -54,7 +54,7 @@ const projects = [
     description:
       'Responsive admin dashboard for managing KOST marketplace — CRUD operations for products, orders, brands, categories, and banners with Firebase backend.',
     image: '/images/kost-admin.svg',
-    liveUrl: '#',
+    liveUrl: 'https://www.kost7.store/',
     githubUrl: 'https://github.com/DONCHINGUEGUIM/kost_admin_web',
   },
   {

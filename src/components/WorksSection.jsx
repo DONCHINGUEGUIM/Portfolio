@@ -152,26 +152,33 @@ export default function WorksSection() {
                   loading="lazy"
                 />
                 {/* Overlay actions */}
-                <div className="absolute inset-0 z-[2] flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white text-black p-2.5 rounded-full hover:bg-neutral-200 transition-colors"
-                    title="Live Preview"
-                  >
-                    <ExternalLink size={16} />
-                  </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white text-black p-2.5 rounded-full hover:bg-neutral-200 transition-colors"
-                    title="Source Code"
-                  >
-                    <Github size={16} />
-                  </a>
-                </div>
+                {((project.liveUrl && project.liveUrl !== '#') ||
+                  (project.githubUrl && project.githubUrl !== '#')) && (
+                  <div className="absolute inset-0 z-[2] flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
+                    {project.liveUrl && project.liveUrl !== '#' && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-black p-2.5 rounded-full hover:bg-neutral-200 transition-colors"
+                        title="Live Preview"
+                      >
+                        <ExternalLink size={16} />
+                      </a>
+                    )}
+                    {project.githubUrl && project.githubUrl !== '#' && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-white text-black p-2.5 rounded-full hover:bg-neutral-200 transition-colors"
+                        title="Source Code"
+                      >
+                        <Github size={16} />
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
 
               {/* Content */}

@@ -50,7 +50,8 @@ export default function AboutSection({ setActiveSection }) {
             <p>
               I focus on the full stack: databases (SQLite, Firestore, Cloudflare D1),
               payment gateways (NotchPay, mobile money), real-time systems (Socket.io,
-              Firebase), and CI/CD deployment. When I'm not coding, you'll find me
+              Firebase), and CI/CD deployment. I'm currently building an Alternative
+              Learning Tracking System. When I'm not coding, you'll find me
               exploring tools and tutorials to sharpen my craft.
             </p>
           </div>

@@ -1,5 +1,5 @@
 import * as esbuild from 'esbuild';
-import { copyFileSync, mkdirSync, readFileSync, writeFileSync, cpSync } from 'fs';
+import { copyFileSync, mkdirSync, readFileSync, writeFileSync, cpSync, rmSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -25,8 +25,9 @@ await esbuild.build({
 // Copy assets
 mkdirSync(resolve(dist, 'assets'), { recursive: true });
 
-// Copy public/images to dist/images
+// Clean + copy public/images to dist/images (rm first so removed SVGs don't go stale)
 try {
+  rmSync(resolve(dist, 'images'), { recursive: true, force: true });
   cpSync(resolve(root, 'public/images'), resolve(dist, 'images'), { recursive: true });
 } catch {}
 

@@ -1,7 +1,53 @@
-import React from 'react';
-import { Mail, MapPin, Send, ArrowRight } from 'lucide-react';
+import React, { useState } from 'react';
+import { Mail, MapPin, Send, CheckCircle2, AlertCircle } from 'lucide-react';
+
+const WEB3FORMS_ACCESS_KEY = '38cd69d1-4b7a-482d-8d6d-88ddf925946f';
 
 export default function ContactSection() {
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({ ...prev, [e.target.id]: e.target.value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (status === 'sending') return;
+    setStatus('sending');
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          from_name: 'DN Portfolio',
+          ...formData,
+          subject: `Portfolio: ${formData.subject || 'New message'} — ${formData.name}`,
+        }),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        setStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setStatus('idle'), 4000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 4000);
+      }
+    } catch {
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 4000);
+    }
+  };
+
   return (
     <section id="contact" className="relative py-24 md:py-32 px-8 md:px-16">
       {/* Background accent */}
@@ -73,7 +119,7 @@ export default function ContactSection() {
           <div className="md:col-span-3">
             <form
               className="glass-card rounded-xl p-6 md:p-8 space-y-5"
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={handleSubmit}
             >
               {/* Name + Email row */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -87,6 +133,9 @@ export default function ContactSection() {
                   <input
                     id="name"
                     type="text"
+                    required
+                    value={formData.name}
+                    onChange={handleChange}
                     placeholder="Your Name"
                     className="w-full bg-neutral-900/80 border border-neutral-800 rounded-lg px-4 py-2.5 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-[#e05236]/60 focus:ring-1 focus:ring-[#e05236]/30 transition-all duration-200"
                   />
@@ -101,6 +150,9 @@ export default function ContactSection() {
                   <input
                     id="email"
                     type="email"
+                    required
+                    value={formData.email}
+                    onChange={handleChange}
                     placeholder="hello@example.com"
                     className="w-full bg-neutral-900/80 border border-neutral-800 rounded-lg px-4 py-2.5 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-[#e05236]/60 focus:ring-1 focus:ring-[#e05236]/30 transition-all duration-200"
                   />
@@ -115,12 +167,14 @@ export default function ContactSection() {
                 >
                   Subject
                 </label>
-                <input
-                  id="subject"
-                  type="text"
-                  placeholder="Project Collaboration"
-                  className="w-full bg-neutral-900/80 border border-neutral-800 rounded-lg px-4 py-2.5 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-[#e05236]/60 focus:ring-1 focus:ring-[#e05236]/30 transition-all duration-200"
-                />
+                  <input
+                    id="subject"
+                    type="text"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    placeholder="Project Collaboration"
+                    className="w-full bg-neutral-900/80 border border-neutral-800 rounded-lg px-4 py-2.5 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-[#e05236]/60 focus:ring-1 focus:ring-[#e05236]/30 transition-all duration-200"
+                  />
               </div>
 
               {/* Message */}
@@ -134,6 +188,9 @@ export default function ContactSection() {
                 <textarea
                   id="message"
                   rows={4}
+                  required
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Tell me about your project..."
                   className="w-full bg-neutral-900/80 border border-neutral-800 rounded-lg px-4 py-2.5 text-sm text-white placeholder-neutral-600 focus:outline-none focus:border-[#e05236]/60 focus:ring-1 focus:ring-[#e05236]/30 transition-all duration-200 resize-none"
                 />
@@ -142,13 +199,39 @@ export default function ContactSection() {
               {/* Submit */}
               <button
                 type="submit"
-                className="group w-full bg-[#e05236] hover:bg-[#c4462e] text-white font-semibold rounded-lg px-6 py-3 text-sm transition-all duration-300 flex items-center justify-center gap-2"
+                disabled={status === 'sending'}
+                className={`group w-full font-semibold rounded-lg px-6 py-3 text-sm transition-all duration-300 flex items-center justify-center gap-2 ${
+                  status === 'success'
+                    ? 'bg-emerald-600 text-white cursor-default'
+                    : status === 'error'
+                      ? 'bg-red-600 text-white cursor-default'
+                      : status === 'sending'
+                        ? 'bg-[#c4462e] text-white cursor-wait'
+                        : 'bg-[#e05236] hover:bg-[#c4462e] text-white'
+                }`}
               >
-                Send Message
-                <Send
-                  size={16}
-                  className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"
-                />
+                {status === 'idle' && (
+                  <>
+                    Send Message
+                    <Send
+                      size={16}
+                      className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300"
+                    />
+                  </>
+                )}
+                {status === 'sending' && 'Sending...'}
+                {status === 'success' && (
+                  <>
+                    Message Sent
+                    <CheckCircle2 size={16} />
+                  </>
+                )}
+                {status === 'error' && (
+                  <>
+                    Failed — Try Again
+                    <AlertCircle size={16} />
+                  </>
+                )}
               </button>
             </form>
           </div>

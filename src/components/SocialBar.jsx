@@ -11,7 +11,7 @@ export default function SocialBar() {
     {
       name: 'LinkedIn',
       icon: <Linkedin size={18} />,
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/in/ngueguim-donchi-896296356',
     },
     {
       name: 'GitHub',

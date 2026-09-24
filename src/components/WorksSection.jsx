@@ -15,6 +15,17 @@ const projects = [
   },
   {
     id: 2,
+    title: 'KOST Store',
+    category: 'development',
+    tags: ['Next.js', 'React', 'TypeScript'],
+    description:
+      'Commercial storefront for the KOST marketplace at kost7.store. Product discovery, search, and mobile money checkout — the public web face of the ecosystem.',
+    image: '/images/kost-store.svg',
+    liveUrl: 'https://www.kost7.store/',
+    githubUrl: 'https://github.com/DONCHINGUEGUIM/kost_web2',
+  },
+  {
+    id: 3,
     title: 'Alter Chat',
     category: 'development',
     tags: ['Next.js', 'Socket.io', 'TypeScript'],
@@ -25,7 +36,7 @@ const projects = [
     githubUrl: '#',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Conversational RAG',
     category: 'development',
     tags: ['Python', 'LangChain', 'Docker'],
@@ -36,7 +47,7 @@ const projects = [
     githubUrl: 'https://github.com/DONCHINGUEGUIM/conversational_rag_app',
   },
   {
-    id: 4,
+    id: 5,
     title: 'NotchPay Gateway',
     category: 'development',
     tags: ['Python', 'Flask', 'Fintech'],
@@ -47,7 +58,7 @@ const projects = [
     githubUrl: 'https://github.com/DONCHINGUEGUIM/notch_pay_integration',
   },
   {
-    id: 5,
+    id: 6,
     title: 'KOST Admin Panel',
     category: 'development',
     tags: ['Flutter Web', 'Firebase', 'DataTable2'],
@@ -58,7 +69,7 @@ const projects = [
     githubUrl: 'https://github.com/DONCHINGUEGUIM/kost_admin_web',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Capture',
     category: 'development',
     tags: ['Flutter', 'OCR', 'Mobile'],

@@ -11,7 +11,7 @@ const projects = [
       'Full-stack e-commerce marketplace for Cameroon. Customer/seller app with product listings, cart, checkout, order tracking, and mobile money payments via NotchPay.',
     image: '/images/kost-marketplace.svg',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/DONCHINGUEGUIM/flutter_E-commerceApp',
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const projects = [
       'Conversational RAG app with FastAPI, LangChain, Groq LLM, and Qdrant vector DB. Upload PDFs, ask questions, get context-aware answers — fully Dockerized.',
     image: '/images/conversational-rag.svg',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/DONCHINGUEGUIM/conversational_rag_app',
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const projects = [
       'Payment gateway tester and integration tool for NotchPay mobile money APIs. Auth verification, payment initialization, checkout, and status tracking.',
     image: '/images/notchpay-gateway.svg',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/DONCHINGUEGUIM/notch_pay_integration',
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ const projects = [
       'Responsive admin dashboard for managing KOST marketplace — CRUD operations for products, orders, brands, categories, and banners with Firebase backend.',
     image: '/images/kost-admin.svg',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/DONCHINGUEGUIM/kost_admin_web',
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ const projects = [
       'Fully offline OCR app that recognises text from images and documents on-device. Built with Flutter, no internet required for text extraction.',
     image: '/images/capture-ocr.svg',
     liveUrl: '#',
-    githubUrl: '#',
+    githubUrl: 'https://github.com/DONCHINGUEGUIM/offline_ocr_app',
   },
 ];
 

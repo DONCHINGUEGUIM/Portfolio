@@ -1,13 +1,8 @@
 import React from 'react';
-import { Dribbble, Instagram, Linkedin, Globe } from 'lucide-react';
+import { Instagram, Linkedin } from 'lucide-react';
 
 export default function SocialBar() {
   const socials = [
-    {
-      name: 'Dribbble',
-      icon: <Dribbble size={18} />,
-      url: 'https://dribbble.com',
-    },
     {
       name: 'Instagram',
       icon: <Instagram size={18} />,
@@ -19,18 +14,13 @@ export default function SocialBar() {
       url: 'https://linkedin.com',
     },
     {
-      name: 'Behance',
+      name: 'GitHub',
       icon: (
-        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-          <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.098 1.189.098 1.847h-8.082c.089 1.784 1.252 2.734 2.82 2.734 1.201 0 2.112-.483 2.502-1.412h2.486zm-5.275-5.926c-1.282 0-2.193.738-2.392 1.986h4.633c-.088-1.121-.861-1.986-2.241-1.986zm-11.726-2.074h-6.725v12h6.812c3.213 0 5.188-1.503 5.188-3.902 0-1.729-1.002-2.932-2.392-3.398 1.122-.483 1.88-1.502 1.88-2.932 0-2.183-1.848-3.768-4.763-3.768zm-3.725 3.109h2.82c1.121 0 1.88.483 1.88 1.34 0 .897-.759 1.398-1.88 1.398h-2.82v-2.738zm0 4.887h3.042c1.221 0 2.052.506 2.052 1.502 0 1.021-.831 1.503-2.052 1.503h-3.042v-3.005z"/>
+        <svg className="w-[18px] h-[18px] fill-current" viewBox="0 0 24 24">
+          <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3" />
         </svg>
       ),
-      url: 'https://behance.net',
-    },
-    {
-      name: 'Global',
-      icon: <Globe size={18} />,
-      url: 'https://github.com',
+      url: 'https://github.com/DONCHINGUEGUIM',
     },
   ];
 
